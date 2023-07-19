@@ -120,9 +120,8 @@ li a {
 }
 
 i {
-    color: #2d25a0;
+    color: #4EC5F7;
     background: 0 0;
-    /* border: 1px solid #2d25a0; */
     width: 15px;
     height: 15px;
     border-radius: 50%;
@@ -146,6 +145,7 @@ li a:hover i {
 .flex-area {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
 }
 
@@ -173,12 +173,45 @@ li a:hover i {
 }
 
 /* nav area style  */
+.nav-area {
+    box-shadow: -5px 0px 20px 0px #F948B2;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 9999;
+}
+
+.nav-area i {
+    font-size: 20px;
+}
+
+.nav-area .container {
+    padding: 10px 0;
+}
 
 .logo-head {
     color: black
 }
 
-.youtube {}
+/* .youtube {
+    padding: 10px 0;
+
+} */
+
+.logo-area h1 {
+    background: linear-gradient(180deg, #050005 0%, #010001 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.logo-area h1 span {
+    background: linear-gradient(180deg, #F948B2 0%, #F948B2 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 .nav-social {
     border-radius: 8px;
@@ -198,6 +231,9 @@ header {
     padding: 0;
 }
 
+.hero-button {
+    justify-content: flex-start;
+}
 
 
 .hero-button2 {
@@ -226,6 +262,7 @@ header {
 .we-right P {
     color: #534C64;
     margin: 20px 0;
+    font-size: 16px;
 }
 
 .we-right h4 {
@@ -235,6 +272,7 @@ header {
 
 .we-right h3 {
     color: #534C64;
+    font-size: 24px;
 }
 
 
@@ -250,13 +288,58 @@ header {
     grid-gap: 20px;
     align-items: start;
     margin-top: 50px;
+    text-align: center;
+}
+
+.videos {
+    position: relative;
 
 }
 
-.videos-area img {
+.videos span {
+    display: block;
+
+}
+
+.videos span i {
+    color: #0a0826;
+    background-color: white;
+
+}
+
+.videos img {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
+
+.watch {
+    color: #F948B2;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 98%;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    border: 4px solid #F948B2;
+    /* Adjust the opacity and color to your liking */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    /* Hide the overlay by default */
+    transition: opacity 0.3s ease;
+}
+
+.videos:hover .overlay {
+    opacity: 1;
+    color: white;
+}
+
 
 .videos-area p {
     margin-top: 10px;
@@ -363,6 +446,73 @@ td:first-child {
 }
 
 
+
+
+
+/*--------------------------------
+ all games area style start here 
+ --------------------------------*/
+.all-games {
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
+
+.one {
+    display: none;
+}
+
+.all-games-top {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    grid-gap: 20px
+}
+
+.all-games-down {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    grid-gap: 20px
+}
+
+.all-games-top p,
+.all-games-down p {
+    margin-left: 10px;
+    color: #0a0826;
+    font-size: 15px;
+}
+
+.all-games-top img {
+    width: 30%;
+}
+
+
+.all-games-down img {
+    width: 23%;
+}
+
+.games-button {
+    background-color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 40px;
+    border: 1px solid transparent;
+    justify-content: flex-start;
+
+}
+
+.games-button:hover {
+    background-color: transparent;
+    border: 1px solid #F948B2;
+    cursor: pointer;
+
+}
+
+.games-button:hover p {
+    color: #F948B2;
+
+}
+
+
 /*--------------------------------
  footer area style start here 
  --------------------------------*/
@@ -371,4 +521,46 @@ footer {
     text-align: center;
     background: #0B0223;
 
+}
+
+.footer-logo,
+footer ul {
+    justify-content: center;
+    margin: 30px 0;
+}
+
+footer h1 {
+    background: linear-gradient(180deg, #ffffff 0%, #ffffff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+footer h1 span {
+    background: linear-gradient(180deg, #F948B2 0%, #F948B2 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+footer a {
+    color: whitesmoke;
+    font-size: 14px;
+
+}
+
+footer ul li a i {
+    margin: 0 10px;
+    color: white;
+    font-size: 24px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.footer-copyright p {
+    color: #baadad;
+    font-size: 12px;
 }
