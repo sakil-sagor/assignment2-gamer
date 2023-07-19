@@ -37,6 +37,23 @@ h5 {
     font-size: 18px;
 }
 
+h1,
+h2 {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2 span,
+.hero-content h2 {
+    background: linear-gradient(180deg, #0a0826 0%, #0a0826 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
 a {
     font-size: 16px;
     font-weight: 500;
@@ -53,7 +70,7 @@ p {
     font-size: 16px;
     font-weight: 400;
     line-height: 25px;
-    color: black;
+    color: #534C64;
 }
 
 span {
@@ -147,6 +164,14 @@ li a:hover i {
     align-items: center;
 }
 
+.left-area {
+    text-align: left;
+}
+
+.right-area {
+    text-align: right;
+}
+
 /* nav area style  */
 
 .logo-head {
@@ -169,12 +194,11 @@ header {
     background-repeat: no-repeat;
 }
 
-.hero-left h1 {
-    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.header .container {
+    padding: 0;
 }
+
+
 
 .hero-button2 {
     background: linear-gradient(90deg, #4EC5F7 0%, #4ec4f7ab 100%);
@@ -189,5 +213,99 @@ header {
 }
 
 /*--------------------------------
- hero area style start here 
+ we are gamer area style start here 
  --------------------------------*/
+.we-are-gamer {
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
+
+.we-content img {
+    width: 80%;
+}
+
+.we-right P {
+    color: #534C64;
+    margin: 20px 0;
+}
+
+.we-right h4 {
+    color: #534c64be;
+    margin-top: 20px;
+}
+
+.we-right h3 {
+    color: #534C64;
+}
+
+
+/*--------------------------------
+ videos area style start here 
+ --------------------------------*/
+.videos-content {
+    text-align: center;
+}
+
+.videos-area {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    align-items: start;
+    margin-top: 50px;
+
+}
+
+.videos-area img {
+    width: 100%;
+    height: auto;
+}
+
+.videos-area p {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+/*--------------------------------
+ play instant area style start here 
+ --------------------------------*/
+
+
+.play-instant img {
+    width: 90%;
+
+}
+
+.play-right {
+    position: relative;
+    text-align: left;
+}
+
+.play-left {
+    text-align: left;
+
+}
+
+.play-instant .side-image {
+    width: 40%;
+    position: absolute;
+    bottom: -15%;
+    left: -15%;
+}
+
+.play-instant .side-image img {
+    width: 100%;
+
+}
+
+
+/*--------------------------------
+ play games area style start here 
+ --------------------------------*/
+.play-side-image {
+    width: 45%;
+    position: absolute;
+    bottom: -15%;
+    right: -15%;
+}
+
+.play-game-right {
+    text-align: right;
+}
