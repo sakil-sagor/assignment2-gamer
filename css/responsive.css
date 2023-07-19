@@ -159,7 +159,7 @@ larg device and small device default width
         width: 40%;
         position: absolute;
         bottom: -15%;
-        right: -5%;
+        right: 0%;
     }
 
     .all-games-top img {
