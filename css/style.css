@@ -309,3 +309,66 @@ header {
 .play-game-right {
     text-align: right;
 }
+
+/*--------------------------------
+ career area style start here 
+ --------------------------------*/
+.career {
+    background-color: #F948B2;
+    background-image: url('../images/Group 14.png');
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.career-area-right img {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+}
+
+tr {
+    border-bottom: 1px solid #ddd;
+}
+
+
+td {
+    padding: 8px;
+
+}
+
+
+
+tr:hover {
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+
+td:first-child {
+    font-weight: bold;
+}
+
+.career .button {
+    margin-top: 50px;
+    background: linear-gradient(90deg, #ffffff 0%, #ffffff 100%);
+    color: #F948B2;
+}
+
+.career .button:hover {
+    background: linear-gradient(90deg, #d3c2c2 0%, #dec7c7 100%);
+}
+
+
+/*--------------------------------
+ footer area style start here 
+ --------------------------------*/
+
+footer {
+    text-align: center;
+    background: #0B0223;
+
+}
